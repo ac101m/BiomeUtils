@@ -15,7 +15,7 @@ public abstract class BiomeLayer extends VersionedGen {
     protected int scale = -1;
     protected int layerId = -1;
 
-    private final LayerCache layerCache = new LayerCache(1024 * 1024);
+    private final LayerCache layerCache = new LayerCache(32);
 
     public BiomeLayer(MCVersion version, BiomeLayer... parents) {
         super(version);
